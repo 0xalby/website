@@ -1,0 +1,86 @@
+.form {
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  min-height: 500px;
+  transition: 0.2s;
+  padding: 40px;
+}
+
+.form .title {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.form .input {
+  width: 100%;
+  background-color: #090b0c;
+  border: 1px solid #ffffff20;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+  height: 40px;
+  color: #ffffff99;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.textarea {
+  height: fit-content;
+  min-height: 300px;
+  resize: none;
+}
+
+.complete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+}
+
+/*STATUS MESSAGES - WILL CREATE NEW COMPONENT*/
+
+.form .actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.form .status {
+  font-size: 14px;
+  opacity: 1;
+  display: inline-block;
+  margin-left: 15px;
+  animation: fadein 2s;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-right:5px; /*this padding is needed for the image scaling*/
+}
+
+.form .status img {
+  height: 10px;
+  margin-left: 10px;
+  transform: scale(1.5);
+}
+
+.success {
+  color: #2dffc3;
+}
+
+.error {
+  color: #f03d3d;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

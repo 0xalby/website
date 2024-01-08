@@ -1,0 +1,49 @@
+.container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.2s;
+  opacity: 1;
+  background-color: rgba(8, 9, 10, 0.836);
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container_open {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+.wrapper {
+  width:100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.fadeIn {
+    animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 30px;
+  }
+}

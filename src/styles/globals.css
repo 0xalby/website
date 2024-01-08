@@ -1,0 +1,5 @@
+html, body {
+    background-color: #090b0c;
+    color: rgb(206, 220, 228);
+    font-family: var(--font-roboto);
+}

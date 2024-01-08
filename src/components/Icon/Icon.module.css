@@ -1,0 +1,13 @@
+.container {
+  display: inline-block;
+  height: 80px;
+  width: 40px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+
+.container:hover {
+    opacity: .7;
+}

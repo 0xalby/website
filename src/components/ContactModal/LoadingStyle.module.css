@@ -1,0 +1,42 @@
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+  
+  .loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 350px;
+    height: 100%;
+    background: transparent;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(45, 255, 195, 1) 25%,
+      rgba(45, 255, 195, 1) 50%,
+      rgba(45, 255, 195, 1) 90%,
+      transparent 100%
+    );
+    -webkit-box-shadow: var(--glow-green);
+    -moz-box-shadow: var(--glow-green);
+    box-shadow: var(--glow-green);
+    animation: swipe 1.4s linear infinite;
+  }
+  
+  @keyframes swipe {
+    0% {
+      left: -150px;
+    }
+    80% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  

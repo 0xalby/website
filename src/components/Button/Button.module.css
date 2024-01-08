@@ -1,0 +1,33 @@
+.container {
+    border: 1px solid #ffffff20;
+    border-radius: 5px;
+    line-height:40px;
+    font-size: 14px;
+    padding: 0 10px;
+    width:fit-content; 
+    min-width: 70px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--font-roboto-mono);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+    max-width: 110px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+.container:hover {
+    background-color: #ffffff08;
+}
+
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+

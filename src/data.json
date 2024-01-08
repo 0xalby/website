@@ -1,0 +1,8 @@
+{
+    "name": "alby",
+    "tagline": "Full-stack developer in Manchester",
+    "description": "Experienced self-taught developer specializing in web development. Passionate about developer tech soloutions and contributing to cutting-edge projects.",
+    "platforms": [
+        { "icon": "/icons/github.png", "url": "https://github.com/0xalby" }
+    ]
+}
