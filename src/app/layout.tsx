@@ -19,7 +19,7 @@ import "@/styles/globals.css";
 export const metadata: Metadata = {
   title: "alby",
   description:
-    "Experienced self-taught developer specializing in web development. Passionate about developer tech soloutions and contributing to cutting-edge projects.",
+    "Experienced full-stack developer specializing in the crypto sphere. Passionate about building software that helps people.",
 };
 
 export default function RootLayout({
